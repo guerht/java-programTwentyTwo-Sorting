@@ -14,16 +14,16 @@ public class BubbleSort extends Sorts {
 		boolean continueLoop;
 		int count = 1;
 		do {
-			System.out.print("Step #" + count + " ");
-			printArray();
 			continueLoop = false;
 			for(int i = 0; i < bubble.length-1; i++) {
+				System.out.print("Step #" + count + " ");
+				printArray();
 				if(bubble[i] > bubble[i+1]) {
 					super.swap(i, i+1);
 					continueLoop = true;
 				}
+				count++;
 			}
-			count++;
 		} while(continueLoop);
 	}
 }

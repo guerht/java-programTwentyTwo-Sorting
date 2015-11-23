@@ -9,24 +9,28 @@ public class RunSorts {
 		// Bubble Sort (66 steps)
 		BubbleSort b = new BubbleSort();
 		System.out.println("Unsorted: " + b);
-		b.sort();
+		// b.sort();
 		System.out.println("Sorted: " + b + "\n");
 		// Selection Sort (78 steps)
 		SelectionSort s = new SelectionSort();
 		System.out.println("Unsorted: " + s);
-		s.sort();
+		// s.sort();
 		System.out.println("SORTED: " + s + "\n");
 		// Insertion Sort (36 steps)
 		InsertionSort i = new InsertionSort();
 		System.out.println("Unsorted: " + i);
-		i.sort();
+		// i.sort();
 		System.out.println("SORTED: " + i + "\n");
 		// Quick Sort (14 steps)
 		QuickSort q = new QuickSort();
 		System.out.println("Unsorted: " + q);
-		q.sort();
+		// q.sort();
 		System.out.println("SORTED: " + q + "\n");
 		// Merge Sort
+		MergeSort m = new MergeSort();
+		System.out.println("Unsorted: " + m);
+		m.sort();
+		System.out.println("SORTED: " + m + "\n");
 		// Radix Sort (?)
 	}
 }

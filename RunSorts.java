@@ -26,11 +26,15 @@ public class RunSorts {
 		System.out.println("Unsorted: " + q);
 		// q.sort();
 		System.out.println("SORTED: " + q + "\n");
-		// Merge Sort
+		// Merge Sort (44 steps)
 		MergeSort m = new MergeSort();
 		System.out.println("Unsorted: " + m);
 		m.sort();
-		System.out.println("SORTED: " + m + "\n");
+		System.out.println("\nDoing Linear Search: ");
+		System.out.println("Index of 69: " + m.linearSearch(69));
+		System.out.println("\nDoing Binary Search: ");
+		System.out.println("Index of 65: " + m.binarySearch(65));
+		// System.out.println("SORTED: " + m + "\n");
 		// Radix Sort (?)
 	}
 }
